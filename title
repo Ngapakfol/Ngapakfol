@@ -1,0 +1,16 @@
+title: "NGAPAK FOL"
+description: "Stay Connect and Stay Ngapak"
+author: "Nama Kamu"
+baseurl: "" # Jangan ubah jika menggunakan username.github.io
+
+# Logo
+logo: "/assets/logo.png"  
+
+# Menu Navigasi
+menu:
+  - title: "Home"
+    url: "/"
+  - title: "Tentang"
+    url: "/tentang/"
+  - title: "Media"
+    url: "/media/"
