@@ -1,81 +1,92 @@
-/* Reset dasar */
+* Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  padding-bottom: 100px; /* agar tidak ketimpa footer */
 }
 
 /* Header */
 header {
-    background: #4CAF50;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
+  background-color: #0c4b33;
+  color: white;
+  text-align: center;
+  padding: 30px 15px;
 }
 
-/* Main Content */
+header h1 {
+  font-size: 2em;
+}
+
+/* Main content */
 main {
-    padding: 20px;
+  max-width: 800px;
+  margin: auto;
+  padding: 30px 20px;
 }
 
-/* Section */
 section {
-    margin-bottom: 20px;
-    background: white;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
 }
 
-/* Navigasi */
-nav {
-    background: #4CAF50;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
+section h2 {
+  color: #0c4b33;
+  margin-bottom: 10px;
 }
 
 /* Footer */
 footer {
-    text-align: center;
-    padding: 10px 0;
-    background: #333;
-    color: white;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+  background-color: #0c4b33;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
-/* Responsif */
-@media (max-width: 600px) {
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
+/* Footer Navigation */
+footer nav {
+  margin-bottom: 10px;
+}
 
-    section {
-        margin-bottom: 15px;
-    }
+footer nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+footer nav a:hover {
+  color: #ffd700;
+}
+
+/* Galeri Foto (foto.html) */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.gallery img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
 }
