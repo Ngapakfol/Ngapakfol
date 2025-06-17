@@ -1,95 +1,81 @@
-/* style.css */
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-/* Umum */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #fffdf7;
-  margin: 0;
-  padding: 0;
-  color: #333;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 /* Header */
 header {
-  background-color: #ff7043;
-  color: white;
-  padding: 20px;
-  text-align: center;
-}
-
-header h1 {
-  margin: 0;
-}
-
-nav {
-  margin-top: 10px;
-}
-
-nav a {
-  margin: 0 10px;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s;
-}
-
-nav a:hover {
-  color: #ffe0b2;
+    background: #4CAF50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
 }
 
 /* Main Content */
 main {
-  padding: 30px;
-  max-width: 900px;
-  margin: auto;
-  line-height: 1.8;
+    padding: 20px;
 }
 
-/* Table Style */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
+/* Section */
+section {
+    margin-bottom: 20px;
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-table th, table td {
-  padding: 12px;
-  border: 1px solid #ddd;
-  text-align: center;
-  background-color: #fff8e1;
+/* Navigasi */
+nav {
+    background: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
 }
 
-table th {
-  background-color: #ffb74d;
-  color: white;
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
 }
 
 /* Footer */
 footer {
-  background-color: #ffccbc;
-  text-align: center;
-  padding: 10px;
-  margin-top: 40px;
-  font-size: 14px;
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
-/* Untuk galeri foto jika diperlukan */
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
+/* Responsif */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
 
-.gallery img {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  transition: transform 0.3s;
-}
-
-.gallery img:hover {
-  transform: scale(1.05);
+    section {
+        margin-bottom: 15px;
+    }
 }
